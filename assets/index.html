@@ -11,15 +11,15 @@
         }
         body {
             font-family: Arial, sans-serif;
-            background-image: url('assets/img/fundo.jpg');
+            background-image: url('./img/cozinha para bg do home.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
+            height: 60vh;
         }
         header {
             background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
+            padding: 10px;
             position: fixed;
             width: 100%;
             top: 0;
@@ -56,12 +56,27 @@
             font-weight: bold;
             font-size: 20px;
             padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
+            margin-right: 30px;
+            transition: background-color 0.3s, color 0.1s;
         }
 
         nav a:hover {
             color: gray;
+        }
+
+        nav a.active {
+            background-color: #333;
+            color: white;
+        }
+        .barra-superior {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            color: rgb(24, 20, 17);
         }
         h2 {
             font-size: 30px;
@@ -82,6 +97,20 @@
             text-align: center;
             color: rgb(19, 3, 3);
         }
+        .home {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100vh;
+            height: 100vh;
+            text-align: center;
+            color: rgb(247, 242, 242);
+            text-align: center;
+        }
+        .home h2 h1 {
+            font-size: 30px;
+            margin-right: 30px;
+        }
         .container h2 {
             font-size: 30px;
             margin-bottom: 10px;
@@ -93,8 +122,7 @@
     </style>
 
 <body>
-    <div class="barra-superior">
-        <header>
+    <header>
             <nav>
                 <lu>
                     <span>Home/Desing</span>
@@ -116,19 +144,29 @@
                 </lu>
             </nav>
         </header>
-    </div>
-
-    <div class="home">
-        <section class="home">
-
-            <h2>Tenha a casa que Voce</h2>
+    
+    <section class="home">
+        <div class="home"> 
+            <h2>Tenha a casa que Voce</h2> 
             <h1>Sempre Sonhou em Morar</h1>
-         </section>
-    </div>
+         </div>
+    </section>
+
+
+    <section class="sobre">
+        <div class="container">
+            <h3>ESPECIALIZADA EM <BR> DESORAÇÃO DE INTERIORES <BR> DE ALTO PADRÃO</h3>
+        
+        
+        
+        </div>
+    </section>
+        
     <div class="container">
-        <h2>Seja Bem Vindo</h2>
-        <h1>Ao nosso site</h1>
-        <h2>Estamos aqui para ajudar</h2>
+       
+
+
+        
 
     <script src="script.js"></script>
 </body>
