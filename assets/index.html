@@ -18,7 +18,8 @@
             height: 60vh;
         }
         header {
-            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            background-color: rgba(3, 3, 3, 0.8);
             padding: 10px;
             position: fixed;
             width: 100%;
@@ -34,9 +35,13 @@
         }
 
         nav span {
-            margin-right: 90px;
+            font-family: 'Arial', sans-serif;
+            font-weight: bold;
+            margin-right: 290px;
             font-weight: bold;
             font-size: 30px;
+            padding-bottom: 2px;
+            color: rgb(247, 242, 242);
         }
 
         nav lu {
@@ -49,14 +54,24 @@
         nav li {
             margin-right: 15px;
         }
-
-        nav a {
+        
+        .a {
             text-decoration: none;
-            color: black;
+            color: rgb(247, 243, 243);
             font-weight: bold;
             font-size: 20px;
             padding: 10px 20px;
-            margin-right: 30px;
+            margin-right: 40px;
+            transition: background-color 0.3s, color 0.1s;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: rgb(243, 239, 239);
+            font-weight: bold;
+            font-size: 20px;
+            padding: 10px 20px;
+            margin-right: 20px;
             transition: background-color 0.3s, color 0.1s;
         }
 
@@ -78,15 +93,25 @@
             z-index: 1000;
             color: rgb(24, 20, 17);
         }
-        h2 {
+        h1 {
+            font-size: 20px;
+            color: rgb(247, 243, 243);
+        }
+        .prim {
+            font-family: 'Arial', sans-serif;
             font-size: 30px;
             text-align: center;
             margin-top: 60px;
+            padding-left: 20px;
+            
         }
-        h1 {
+        .segun {
             font-size: 40px;
             text-align: center;
             margin-top: 10px;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            left: 370px; ;
         }
         .container {
             display: flex;
@@ -107,9 +132,9 @@
             color: rgb(247, 242, 242);
             text-align: center;
         }
-        .home h2 h1 {
-            font-size: 30px;
-            margin-right: 30px;
+        .home h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
         }
         .container h2 {
             font-size: 30px;
@@ -119,13 +144,29 @@
             font-size: 40px;
             margin-bottom: 20px;
         }
+        .etapas {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: rgb(19, 3, 3);
+            background-color: rgba(139, 137, 137, 0.8);
+        }
+        .etapas h3 {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 10px;
+        }
     </style>
 
 <body>
     <header>
             <nav>
                 <lu>
-                    <span>Home/Desing</span>
+                    <h1>Home/Desing</h1>
                     <li>
                         <a href="">Home</a>
                     </li>
@@ -147,17 +188,80 @@
     
     <section class="home">
         <div class="home"> 
-            <h2>Tenha a casa que Voce</h2> 
-            <h1>Sempre Sonhou em Morar</h1>
+            <span class="prim">Tenha a casa que Voce</span> 
+            <span class="segun">Sempre Sonhou em Morar</span>
          </div>
     </section>
 
-
     <section class="sobre">
         <div class="container">
-            <h3>ESPECIALIZADA EM <BR> DESORAÇÃO DE INTERIORES <BR> DE ALTO PADRÃO</h3>
+            <h2>SOMOS UMA EMPRESA <br> ESPECIALIZADA  EM DESING DE INTERIORES <br>  DE ALTO PADRÃO</h2>
+        </div>
+
         
+        <div class="prim-estro" style="text-align: center;">
+            <h4>Com paixão e expertise, nós transformamos lares em refúgios únicos! Acreditamos que o projeto de decoração de interiores de uma casa transcende a mera estética: ele é a materialização dos seus sonhos e desejos mais profundos. Nosso objetivo é concretizar cada detalhe, tornando o seu dia a dia infinitamente mais funcional e a sua vida, extraordinariamente mais agradável. Deixe-nos dar vida à casa dos seus sonhos!</h4>
+        </div>
+        <br>
+        <br>
+        <div class="segun-estro" style="text-align: center; margin-top: 20px;">
+            <h4>Com uma visão apurada e um olhar para o futuro do seu bem-estar, desenvolvemos projetos de alto padrão que não apenas decoram, mas que verdadeiramente materializam seus sonhos mais íntimos. Através de uma escuta atenta e da profunda compreensão das suas necessidades, cada detalhe é cuidadosamente pensado para criar espaços que inspiram e acolhem. Deixe-nos transformar seus anseios em realidade! </h4>
+        </div>
+    </section>
+
+
+    <section class="Etapas">
+        <div class="container">
+            <h3>ETAPAS PARA O SEU PROJETO</h3>
+            <br>
+            <br>
+            <br>
+            
+           
         
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px; ">
+                <i class="icon" style="font-size: 40px;">&#9733;</i>
+                <h4>REUNIÃO DE BRIEFING</h4>
+                <br>
+                <p>Esse é o momento em que o cliente <br> apresenta suas necessidades e expectativas <br> para o projeto</p>
+                <hr>
+            </div>
+            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                <i class="icon" style="font-size: 40px;">&#9733;</i>
+                <h4>DESENVOLVIMENTO DO PROJETO</h4>
+                <br>
+                <p>Com base no briefing, são desenvolvidas algumas opções de planetas, ou layouts.</p>
+                <hr>
+            </div>
+            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                <i class="icon" style="font-size: 40px;">&#9733;</i>
+                <h4>PROJETO EXECUTIVO E ORÇAMENTOS</h4>
+                <br>
+                <p>Com projeto de layout aprovado, Partimos para o desenvolvimento do projeto executivo.</p>
+                <hr>
+            </div>
+            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                <i class="icon" style="font-size: 40px;">&#9733;</i>
+                <h4>GERENCIAMENTO DA REFORMA</h4>
+                <br>
+                <p>Contamos os fornecedores e gerenciamos todo o processo de execução, Focando na qualidade e no cumprimento de prazos</p>
+                <hr>
+            </div>
+            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                <i class="icon" style="font-size: 40px;">&#9733;</i>
+                <h4>PRODUÇÃO E DECORAÇÃO</h4>
+                <br>
+                <p>Um projeto só é finalizado com a casa decorada! A escolha de objetos como almofadas, Quadros, Vasos, etc. E que vai deixar a casa linda e convidativa.</p>
+                <hr>
+            </div>
+            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                <i class="icon" style="font-size: 40px;">&#9733;</i>
+                <h4>Título 6</h4>
+                <p>Descrição breve sobre o conteúdo da caixa 6.</p>
+                <hr>
+            </div>
+        </div>
         
         </div>
     </section>
