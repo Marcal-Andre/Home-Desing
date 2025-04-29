@@ -1,312 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: Arial, sans-serif;
-            background-image: url('./img/cozinha para bg do home.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 60vh;
-        }
-        header {
-            display: flex;
-            background-color: rgba(3, 3, 3, 0.8);
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        nav span {
-            font-family: 'Arial', sans-serif;
-            font-weight: bold;
-            margin-right: 290px;
-            font-weight: bold;
-            font-size: 30px;
-            padding-bottom: 2px;
-            color: rgb(247, 242, 242);
-        }
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('./img/cozinha para bg do home.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 60vh;
+    }
 
-        nav lu {
-            display: flex;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    header {
+        display: flex;
+        background-color: rgba(3, 3, 3, 0.8);
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
 
-        nav li {
-            margin-right: 15px;
-        }
-        
-        .a {
-            text-decoration: none;
-            color: rgb(247, 243, 243);
-            font-weight: bold;
-            font-size: 20px;
-            padding: 10px 20px;
-            margin-right: 40px;
-            transition: background-color 0.3s, color 0.1s;
-        }
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-        nav a {
-            text-decoration: none;
-            color: rgb(243, 239, 239);
-            font-weight: bold;
-            font-size: 20px;
-            padding: 10px 20px;
-            margin-right: 20px;
-            transition: background-color 0.3s, color 0.1s;
-        }
+    nav span {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        margin-right: 290px;
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 2px;
+        color: rgb(247, 242, 242);
+    }
 
-        nav a:hover {
-            color: gray;
-        }
+    nav lu {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-        nav a.active {
-            background-color: #333;
-            color: white;
-        }
-        .barra-superior {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 10px;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-            color: rgb(24, 20, 17);
-        }
-        h1 {
-            font-size: 20px;
-            color: rgb(247, 243, 243);
-        }
-        .prim {
-            font-family: 'Arial', sans-serif;
-            font-size: 30px;
-            text-align: center;
-            margin-top: 60px;
-            padding-left: 20px;
-            
-        }
-        .segun {
-            font-size: 40px;
-            text-align: center;
-            margin-top: 10px;
-            color: white;
-            font-family: 'Arial', sans-serif;
-            left: 370px; ;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            color: rgb(19, 3, 3);
-        }
-        .home {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100w  h;
-            height: 100vh;
-            text-align: center;
-            color: rgb(247, 242, 242);
-            text-align: center;
-        }
-        .home h1 {
-            font-size: 50px;
-            margin-bottom: 20px;
-        }
-        .container h2 {
-            font-size: 30px;
-            margin-bottom: 10px;
-        }
-        .container h1 {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-        .etapas {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            color: rgb(19, 3, 3);
-            background-color: rgba(139, 137, 137, 0.8);
-        }
-        .etapas h3 {
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-        }
+    nav li {
+        margin-right: 15px;
+    }
 
-        .sobre {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            color: rgb(19, 3, 3);
-            background-color: rgba(139, 137, 137, 0.8);
-            margin-top: 225px;
-        }
-        .sobre h2 {
-            padding: 20px;
-            margin-top: -180px;
-            border-radius: 10px;
-            width: 80%;
-        }
+    .a {
+        text-decoration: none;
+        color: rgb(247, 243, 243);
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-right: 40px;
+        transition: background-color 0.3s, color 0.1s;
+    }
 
-        .prim-estro {
+    nav a {
+        text-decoration: none;
+        color: rgb(243, 239, 239);
+        font-weight: bold;
+        font-size: 20px;
+        padding: 10px 20px;
+        margin-right: 20px;
+        transition: background-color 0.3s, color 0.1s;
+    }
 
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            width: 80%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .segun-estro {
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 10px;
-            width: 80%;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-    </style>
+    nav a:hover {
+        color: gray;
+    }
+
+    nav a.active {
+        background-color: #333;
+        color: white;
+    }
+
+    .barra-superior {
+        padding: 10px;
+        position: fixed;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: 100px;
+        color: rgb(24, 20, 17);
+    }
+
+    h1 {
+        font-size: 20px;
+        color: rgb(247, 243, 243);
+    }
+
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: rgb(19, 3, 3);
+    }
+
+    .home {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100w h;
+        height: 100vh;
+        text-align: center;
+        color: rgb(247, 242, 242);
+        text-align: center;
+    }
+
+    .home h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+        color: rgb(247, 242, 242);
+    }
+    
+
+    .home .span {
+        font-size: 50px;
+        color: rgb(247, 242, 242);
+    }
+    .home .prim {
+        margin-top: 600px;
+        font-size: 50px;
+        color: rgb(247, 242, 242);
+    }
+    .home .segun {
+        font-size: 50px;
+        color: rgb(247, 242, 242);
+    }
+
+
+    carousel {
+        margin-bottom: 10px;
+        width: 100%;
+        height: 40vh;
+    }
+
+    .container h2 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .container h1 {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .etapas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: rgb(19, 3, 3);
+        background-color: rgba(139, 137, 137, 0.8);
+    }
+
+    .etapas h3 {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        text-align: center;
+        color: rgb(19, 3, 3);
+        background-color: rgba(139, 137, 137, 0.8);
+        margin-top: 225px;
+    }
+
+    .sobre h2 {
+        padding: 20px;
+        margin-top: -180px;
+        border-radius: 10px;
+        width: 80%;
+    }
+
+    .prim-estro {
+
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 80%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .segun-estro {
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        width: 80%;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
 
 <body>
     <header>
-            <nav>
-                <lu>
-                    <h1>Home/Desing</h1>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li> 
-                        <a href="">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="">Portifolio</a>
-                    </li>
-                    <li>
-                        <a href="">Contato</a>
-                    </li>
-                </lu>
-            </nav>
-        </header>
-    
-    <section class="home">
-        <div class="home"> 
-            <span class="prim">Tenha a casa que Voce</span> 
-            <span class="segun">Sempre Sonhou em Morar</span>
-         </div>
-    </section>
-
-    <section class="sobre">
-        <div class="container">
-            <h2>SOMOS UMA EMPRESA <br> ESPECIALIZADA  EM DESING DE INTERIORES <br>  DE ALTO PADRÃO</h2>
-        </div>
-
-        
-        <div class="prim-estro"
-
-            <p> Com paixão e expertise, nós transformamos lares em refúgios únicos! Acreditamos que o projeto de decoração de interiores de uma casa transcende a mera estética: ele é a materialização dos seus sonhos e desejos mais profundos. Nosso objetivo é concretizar cada detalhe, tornando o seu dia a dia infinitamente mais funcional e a sua vida, extraordinariamente mais agradável. Deixe-nos dar vida à casa dos seus sonhos!</p>
-        </div>
-        <br>
-        <br>
-        <div class="segun-estro">
-            <p>Com uma visão apurada e um olhar para o futuro do seu bem-estar, desenvolvemos projetos de alto padrão que não apenas decoram, mas que verdadeiramente materializam seus sonhos mais íntimos. Através de uma escuta atenta e da profunda compreensão das suas necessidades, cada detalhe é cuidadosamente pensado para criar espaços que inspiram e acolhem. Deixe-nos transformar seus anseios em realidade! </p>
-        </div>
-    </section>
+        <nav>
+            <lu>
+                <h1>Home/Desing</h1>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">Sobre</a>
+                </li>
+                <li>
+                    <a href="">Serviços</a>
+                </li>
+                <li>
+                    <a href="">Portifolio</a>
+                </li>
+                <li>
+                    <a href="">Contato</a>
+                </li>
+            </lu>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home">
+                <span class="prim">Tenha a casa que Voce</span>
+                <span class="segun">Sempre Sonhou em Morar</span>
+            </div>
+            <div class="carossel">
+                <div class="container" id="img">
 
 
-    <section class="Etapas">
-        <div class="container">
-            <h3>ETAPAS PARA O SEU PROJETO</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="sobre">
+            <div class="container">
+                <h2>SOMOS UMA EMPRESA <br> ESPECIALIZADA EM DESING DE INTERIORES <br> DE ALTO PADRÃO</h2>
+            </div>
+
+
+            <div class="prim-estro" <p> Com paixão e expertise, nós transformamos lares em refúgios únicos! Acreditamos
+                que
+                o projeto de decoração de interiores de uma casa transcende a mera estética: ele é a materialização dos
+                seus
+                sonhos e desejos mais profundos. Nosso objetivo é concretizar cada detalhe, tornando o seu dia a dia
+                infinitamente mais funcional e a sua vida, extraordinariamente mais agradável. Deixe-nos dar vida à casa
+                dos
+                seus sonhos!</p>
+            </div>
             <br>
             <br>
-            <br>
+            <div class="segun-estro">
+                <p>Com uma visão apurada e um olhar para o futuro do seu bem-estar, desenvolvemos projetos de alto
+                    padrão
+                    que não apenas decoram, mas que verdadeiramente materializam seus sonhos mais íntimos. Através de
+                    uma
+                    escuta atenta e da profunda compreensão das suas necessidades, cada detalhe é cuidadosamente pensado
+                    para criar espaços que inspiram e acolhem. Deixe-nos transformar seus anseios em realidade! </p>
+            </div>
+        </section>
+
+
+        <section class="Etapas">
+            <div class="container">
+                <h3>ETAPAS PARA O SEU PROJETO</h3>
+                <br>
+                <br>
+                <br>
+
+
+
+                <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+                    <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px; ">
+                        <i class="icon" style="font-size: 40px;">&#9733;</i>
+                        <h4>REUNIÃO DE BRIEFING</h4>
+                        <br>
+                        <p>Esse é o momento em que o cliente <br> apresenta suas necessidades e expectativas <br> para o
+                            projeto</p>
+                        <hr>
+                    </div>
+                    <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                        <i class="icon" style="font-size: 40px;">&#9733;</i>
+                        <h4>DESENVOLVIMENTO DO PROJETO</h4>
+                        <br>
+                        <p>Com base no briefing, são desenvolvidas algumas opções de planetas, ou layouts.</p>
+                        <hr>
+                    </div>
+                    <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                        <i class="icon" style="font-size: 40px;">&#9733;</i>
+                        <h4>PROJETO EXECUTIVO E ORÇAMENTOS</h4>
+                        <br>
+                        <p>Com projeto de layout aprovado, Partimos para o desenvolvimento do projeto executivo.</p>
+                        <hr>
+                    </div>
+                    <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                        <i class="icon" style="font-size: 40px;">&#9733;</i>
+                        <h4>GERENCIAMENTO DA REFORMA</h4>
+                        <br>
+                        <p>Contamos os fornecedores e gerenciamos todo o processo de execução, Focando na qualidade e no
+                            cumprimento de prazos</p>
+                        <hr>
+                    </div>
+                    <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                        <i class="icon" style="font-size: 40px;">&#9733;</i>
+                        <h4>PRODUÇÃO E DECORAÇÃO</h4>
+                        <br>
+                        <p>Um projeto só é finalizado com a casa decorada! A escolha de objetos como almofadas, Quadros,
+                            Vasos, etc. E que vai deixar a casa linda e convidativa.</p>
+                        <hr>
+                    </div>
+                    <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
+                        <i class="icon" style="font-size: 40px;">&#9733;</i>
+                        <h4>Título 6</h4>
+                        <p>Descrição breve sobre o conteúdo da caixa 6.</p>
+                        <hr>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="categorias">
+            <div class="container">
+
+            </div>
+
+        </section>
+
+    </main>
+    <footer style="background-color: rgba(3, 3, 3, 0.8); padding: 20px; text-align: center; color: rgb(247, 242, 242);">
+
             
-           
-        
-        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
-            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px; ">
-                <i class="icon" style="font-size: 40px;">&#9733;</i>
-                <h4>REUNIÃO DE BRIEFING</h4>
-                <br>
-                <p>Esse é o momento em que o cliente <br> apresenta suas necessidades e expectativas <br> para o projeto</p>
-                <hr>
-            </div>
-            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
-                <i class="icon" style="font-size: 40px;">&#9733;</i>
-                <h4>DESENVOLVIMENTO DO PROJETO</h4>
-                <br>
-                <p>Com base no briefing, são desenvolvidas algumas opções de planetas, ou layouts.</p>
-                <hr>
-            </div>
-            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
-                <i class="icon" style="font-size: 40px;">&#9733;</i>
-                <h4>PROJETO EXECUTIVO E ORÇAMENTOS</h4>
-                <br>
-                <p>Com projeto de layout aprovado, Partimos para o desenvolvimento do projeto executivo.</p>
-                <hr>
-            </div>
-            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
-                <i class="icon" style="font-size: 40px;">&#9733;</i>
-                <h4>GERENCIAMENTO DA REFORMA</h4>
-                <br>
-                <p>Contamos os fornecedores e gerenciamos todo o processo de execução, Focando na qualidade e no cumprimento de prazos</p>
-                <hr>
-            </div>
-            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
-                <i class="icon" style="font-size: 40px;">&#9733;</i>
-                <h4>PRODUÇÃO E DECORAÇÃO</h4>
-                <br>
-                <p>Um projeto só é finalizado com a casa decorada! A escolha de objetos como almofadas, Quadros, Vasos, etc. E que vai deixar a casa linda e convidativa.</p>
-                <hr>
-            </div>
-            <div style="flex: 1 1 calc(33.33% - 20px); text-align: center; padding: 20px;">
-                <i class="icon" style="font-size: 40px;">&#9733;</i>
-                <h4>Título 6</h4>
-                <p>Descrição breve sobre o conteúdo da caixa 6.</p>
-                <hr>
-            </div>
+             <span>Home Desing</span>
+
+                <div style="margin-top: 10px;"></div>
+                <a href="https://www.facebook.com" target="_blank"
+                style="margin: 0 10px; color: rgb(247, 242, 242); text-decoration: none;">
+                <i class="fab fa-facebook" style="font-size: 24px;"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank"
+                style="margin: 0 10px; color: rgb(247, 242, 242); text-decoration: none;">
+                <i class="fab fa-instagram" style="font-size: 24px;"></i>
+                </a>
+                <a href="mailto:contato@empresa.com" style="margin: 0 10px; color: rgb(247, 242, 242); text-decoration: none;">
+                <i class="fas fa-envelope" style="font-size: 24px;"></i>
+                </a>
+                <a href="https://wa.me/1234567890" target="_blank"
+                 style="margin: 0 10px; color: rgb(247, 242, 242); text-decoration: none;">
+                <i class="fab fa-whatsapp" style="font-size: 24px;"></i>
+                </a>
+                </div>
+
+                <div class="cadastro">
+                <title>New Letter</title>
+                <label for="email">Inscreva-se para receber novidades:</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+
         </div>
-        
+
+        <div class="frame"
+            style="margin-top: 20px; display: flex; justify-content: flex-end; align-items: center; position: relative; right: 0; bottom: 0; width: 50%; height: 100%;">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1234567890123!2d-122.4194154846814!3d37.7749292797598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c8c8c8c8c%3A0x8c8c8c8c8c8c8c8c!2sYour%20Business%20Name%20Here!5e0!3m2!1sen!2sus!4v1612345678900"
+                width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+
         </div>
-    </section>
+        </div>
+
         
-    <div class="container">
-       
+    </container>
 
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-        <script src="script.js"></script>
+        <br><br>
+
+
+
+
+        <p>&copy; 2025 André O. Marçal. Todos os direitos reservados.</p>
+    </footer>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
