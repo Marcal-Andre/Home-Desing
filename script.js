@@ -17,7 +17,6 @@ headerLinks.forEach(link => {
     });
 });
 
-
 // Seleciona o botão de voltar ao topo
 const backToTopButton = document.getElementById('back-to-top');
 // Adiciona um evento de clique ao botão
