@@ -94,7 +94,21 @@
         color: rgb(24, 20, 17);
     }
 
+    .title {
+        display: flex;
+        flex-direction: row;
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        margin-right: 290px;
+        font-weight: bold;
+        font-size: 30px;
+        padding-bottom: 2px;
+        color: rgb(247, 242, 242);
+    }
+
     .h1 {
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
         font-size: 10px;
         color: rgb(247, 243, 243);
     }
@@ -120,13 +134,13 @@
         text-align: center;
     }
 
-    .home h1 {
+    .desc-home h1 {
         font-size: 50px;
         margin-bottom: px;
         color: rgb(247, 242, 242);
     }
-    
-    .home .span {
+
+    .desc-home .span {
         font-size: 50px;
         color: rgb(247, 242, 242);
     }
@@ -135,7 +149,7 @@
         font-size: 80px;
         color: rgb(247, 242, 242);
     }
-    .home .span.segun {
+    .desc-home .span.segun {
         font-size: 50px;
         color: rgb(247, 242, 242);
     }
@@ -217,7 +231,9 @@
     <header>
         <nav>
             <lu>
-                <h1>Home/Desing</h1>
+                <div class="title">
+                    <h1>Home Desing</h1>
+                </div>
                 <li>
                     <a href="#home">Home</a>
                 </li>
@@ -238,7 +254,7 @@
     </header>
 
     <main>
-        <section iclass="home">
+        <section class="desc-home">
             <div id="home" class="home">
                 <span class="prim">Tenha a casa que Voce</span>
                 <span class="segun">Sempre Sonhou em Morar</span>
