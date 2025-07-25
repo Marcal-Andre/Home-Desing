@@ -12,7 +12,7 @@
 
     body {
         font-family: Arial, sans-serif;
-        background-image: url('./img/cozinha para bg do home.png');
+        background-image: url('./img/sala-moderna-home.png.png');
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
@@ -41,7 +41,7 @@
         font-weight: bold;
         font-size: 30px;
         padding-bottom: 2px;
-        color: rgb(247, 242, 242);
+        color: rgb(12, 3, 3);
     }
 
     nav lu {
@@ -56,13 +56,16 @@
     }
 
     nav a {
+        flex-direction: row;
         text-decoration: none;
-        color: rgb(243, 239, 239);
+        color: rgb(0, 0, 0);
         font-weight: bold;
-        font-size: 20px;
+        font-size: 26px;
         padding: 10px 20px;
-        margin-right: 20px;
+        margin-right: 40px;
         transition: background-color 0.3s, color 0.1s;
+        justify-content: space-between;
+
     }
 
     nav a:hover {
@@ -124,24 +127,24 @@
         text-align: center;
     }
 
-    .desc-home h1 {
+    .desc-home {
         font-size: 50px;
         margin-bottom: px;
-        color: rgb(247, 242, 242);
+        color: rgb(7, 5, 5);
     }
 
     .desc-home .span {
         font-size: 50px;
-        color: rgb(247, 242, 242);
+        color: rgb(5, 3, 3);
     }
     .home .span .prim {
         margin-top: 600px;
         font-size: 80px;
-        color: rgb(247, 242, 242);
+        color: rgb(7, 6, 6);
     }
-    .desc-home .span.segun {
+    .prim-estro-sobre {
         font-size: 50px;
-        color: rgb(247, 242, 242);
+        color: rgb(8, 3, 3);
     }
 
     carousel {
@@ -187,25 +190,24 @@
         text-align: center;
         color: rgb(19, 3, 3);
         background-color: rgba(139, 137, 137, 0.8);
-        margin-top: 225px;
     }
 
-    .sobre h2 {
+    .sobre-titulo h2 {
         padding: 20px;
-        margin-top: -180px;
+        margin-top: px;
         border-radius: 10px;
         width: 80%;
     }
 
-    .prim-estro {
+    .prim-estro-sobre {
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
         border-radius: 10px;
         width: 80%;
         font-family: Arial, Helvetica, sans-serif;
     }
 
-    .segun-estro {
+    .segun-estro-sobre {
         padding: 20px;
         margin-top: 20px;
         border-radius: 10px;
@@ -218,9 +220,6 @@
 
 
 <body>
-    
-
-
     <header>
         <nav>
             <lu>
@@ -249,8 +248,8 @@
     <main>
         <section class="desc-home">
             <div id="home" class="home">
-                <span class="prim">Tenha a casa que Voce</span>
-                <span class="segun">Sempre Sonhou em Morar</span>
+                <span class="prim-home">Tenha a casa que Voce</span>
+                <span class="segun-home">Sempre Sonhou em Morar</span>
             </div>
 
             <div class="carossel">
@@ -261,7 +260,7 @@
         </section>
         
         <section class="sobre">
-            <div class="container-title">
+            <div class="titulo-sobre">
                 <h2>SOMOS UMA EMPRESA <br> ESPECIALIZADA EM DESING DE INTERIORES <br> DE ALTO PADRÃO</h2>
             </div>
 
