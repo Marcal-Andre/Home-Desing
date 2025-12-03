@@ -129,328 +129,50 @@
             </div>
         </section>
 
-        <section class="categorias">
-            <div class="container">
-
-            </div>
-
-        </section>
 
 
-        
-            <footer class="footer-design-interiores">
-    <div class="container">
-        <div class="footer-col footer-branding">
-            <a href="/" class="footer-logo">Home Desing</a>
-            <p class="tagline">Seu espaço, nossa arte. Design que transforma vidas e ambientes.</p>
-            <p class="copyright">© 2025 André O. Marçal. Todos os direitos reservados.</p>
+         
+           
+    
+<footer>
+    <div class="footer-content">
+        <div class="footer-section">
+            <h4>Home Design</h4>
+            <p>Transformando lares em refúgios únicos com design de interiores de alto padrão.</p>
         </div>
-
-        <div class="footer-col footer-links">
+        
+        <div class="footer-section">
             <h4>Navegação</h4>
             <ul>
-                <li><a href="/servicos">Nossos Serviços</a></li>
-                <li><a href="/portfolio">Portfólio de Projetos</a></li>
-                <li><a href="/sobre">Sobre Nós e a Equipe</a></li>
-                <li><a href="/blog">Blog: Dicas de Decoração</a></li>
-                <li><a href="/contato">Fale Conosco</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#portifolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </div>
-
-        <div class="footer-col footer-newsletter">
-            <h4>Inspiração Semanal na Sua Caixa</h4>
-            <p>Receba em primeira mão nossas últimas ideias de design, tendências e projetos exclusivos!</p>
-            <form action="/subscribe" method="POST" class="newsletter-form">
-                <input type="email" placeholder="Digite seu melhor e-mail" required aria-label="Endereço de e-mail para newsletter">
-                <button type="submit" class="btn-primary-footer">Quero Receber!</button>
-            </form>
+        
+        <div class="footer-section">
+            <h4>Contato</h4>
+            <p>Email: contato@homedesign.com</p>
+            <p>Telefone: (11) 9999-9999</p>
+            <p>Endereço: São Paulo, SP</p>
         </div>
-
-        <div class="footer-col footer-contact">
-            <h4>Fale com a Gente</h4>
-            <p>
-                <i class="icon-phone"></i> (XX) XXXX-XXXX (WhatsApp)<br>
-                <i class="icon-mail"></i> contato@homedesing.com
-            </p>
-            
-            <h4 class="social-title">Siga a Transformação</h4>
-            <div class="social-icons">
-                <a href="#" target="_blank" aria-label="Acesse nosso Facebook"><i class="icon-facebook"></i></a>
-                <a href="#" target="_blank" aria-label="Acesse nosso Instagram"><i class="icon-instagram"></i></a>
-                <a href="#" target="_blank" aria-label="Fale conosco no WhatsApp"><i class="icon-whatsapp"></i></a>
-                <a href="#" target="_blank" aria-label="Acesse nosso Email"><i class="icon-mail"></i></a>
-            </div>
-
-            <div class="footer-map-small">
-                <a href="URL_MAPA_AMPLIADO" target="_blank">Ver Escritório no Mapa</a>
-            </div>
+        
+        <div class="footer-section">
+            <h4>Redes Sociais</h4>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            </ul>
         </div>
     </div>
     
-    <div class="footer-bottom-bar">
-        <a href="/politica-privacidade">Política de Privacidade</a>
-        <span class="separator">|</span>
-        <a href="/termos-uso">Termos de Uso</a>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Home Design. Todos os direitos reservados.</p>
     </div>
-
 </footer>
-    
-    <style> 
-    /*
- * Arquivo CSS para Footer Minimalista e Proporcional
- * Foco: 4 Colunas com largura uniforme (25% cada) em desktop.
- */
-
-/* 1. Reset Básico e Variáveis */
-:root {
-    --color-primary: #FF7043; 
-    --color-text-light: #F0F0F0; 
-    --color-background-dark: #121212; 
-    --color-secondary-text: #A0A0A0; 
-    --font-stack: 'Arial', sans-serif; 
-}
-
-/* 2. Estilos Gerais do Footer */
-.footer-design-interiores {
-    background-color: var(--color-background-dark);
-    color: var(--color-text-light);
-    padding: 60px 0; 
-    font-family: var(--font-stack);
-}
-
-.footer-design-interiores .container {
-    max-width: 1200px; 
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    flex-wrap: wrap; 
-    /* Centraliza o conteúdo se a largura total for menor que o max-width */
-    justify-content: space-between; 
-    gap: 20px; /* Espaçamento ajustado entre as colunas */
-}
-
-/* 3. Estilos das Colunas - FOCO NO AJUSTE PROPORCIONAL */
-.footer-col {
-    /* Define que cada coluna deve ocupar 25% da largura. */
-    /* flex-basis: Largura ideal (25% = 1/4) */
-    /* flex-grow: 1 permite que cresçam para preencher espaço extra, mas 0 para manter o 25% */
-    /* flex-shrink: 0 evita que encolham abaixo de 25% se houver espaço. */
-    flex: 0 0 calc(25% - 15px); /* 25% menos metade do gap para compensar o espaço */
-    min-width: 180px; /* Reduzido para dar mais flexibilidade, mas evita colunas minúsculas */
-}
-
-/* 4. Tipografia e Títulos */
-.footer-design-interiores h4 {
-    font-size: 1.1em;
-    font-weight: bold;
-    color: var(--color-text-light);
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-/* 5. Estilos do Branding e Copyright */
-.footer-logo {
-    display: block;
-    font-size: 1.8em;
-    font-weight: bold;
-    color: var(--color-primary); 
-    text-decoration: none;
-    margin-bottom: 10px;
-}
-
-.tagline {
-    font-size: 0.9em;
-    color: var(--color-secondary-text);
-    margin-bottom: 20px;
-}
-
-.copyright {
-    font-size: 0.8em;
-    color: #555;
-    margin-top: 20px; /* Ajustado para caber melhor na coluna de 25% */
-}
-
-/* 6. Estilos dos Links de Navegação */
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links li {
-    margin-bottom: 8px;
-}
-
-.footer-links a {
-    color: var(--color-secondary-text);
-    text-decoration: none;
-    transition: color 0.3s ease;
-    font-size: 0.95em;
-}
-
-.footer-links a:hover {
-    color: var(--color-primary);
-}
-
-/* 7. Estilos do Newsletter (Formulário de Leads) */
-.footer-newsletter p {
-    font-size: 0.9em;
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-.newsletter-form {
-    display: flex;
-    flex-direction: column; 
-    gap: 10px;
-}
-
-.newsletter-form input[type="email"] {
-    padding: 12px 15px;
-    border: 1px solid #444;
-    background-color: #222;
-    color: var(--color-text-light);
-    border-radius: 4px;
-    font-size: 1em;
-    width: 100%; /* Ocupa 100% da sua coluna */
-}
-
-.btn-primary-footer {
-    padding: 12px 15px;
-    background-color: var(--color-primary);
-    color: var(--color-background-dark);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease;
-    width: 100%; /* Ocupa 100% da sua coluna */
-}
-
-.btn-primary-footer:hover {
-    background-color: #E06030;
-}
-
-/* 8. Estilos de Contato e Ícones Sociais */
-.footer-contact p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    font-size: 0.95em;
-    color: var(--color-secondary-text);
-}
-
-.social-title {
-    margin-top: 30px;
-}
-
-.social-icons a {
-    color: var(--color-secondary-text);
-    font-size: 1.5em; 
-    margin-right: 15px;
-    transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-    color: var(--color-primary);
-}
-
-[class*="icon-"] {
-    margin-right: 8px;
-    font-size: 1.1em;
-}
-
-.footer-map-small a {
-    display: inline-block;
-    margin-top: 15px;
-    color: var(--color-primary);
-    text-decoration: none;
-    font-weight: bold;
-    border-bottom: 1px solid transparent;
-    transition: border-bottom 0.3s ease;
-}
-
-.footer-map-small a:hover {
-    border-bottom: 1px solid var(--color-primary);
-}
-
-/* 9. Barra Legal Inferior */
-.footer-bottom-bar {
-    text-align: center;
-    padding: 20px 20px 0;
-    margin-top: 40px;
-    border-top: 1px solid #333;
-    font-size: 0.85em;
-}
-
-.footer-bottom-bar a {
-    color: var(--color-secondary-text);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.footer-bottom-bar a:hover {
-    color: var(--color-text-light);
-}
-
-.footer-bottom-bar .separator {
-    margin: 0 10px;
-    color: #444;
-}
-
-/* 10. Responsividade (Mantendo a Proporcionalidade até o limite) */
-/* Quebra para 2 colunas em telas médias/pequenas */
-@media (max-width: 992px) {
-    .footer-design-interiores .container {
-        justify-content: space-around; 
-    }
-
-    .footer-col {
-        /* Ajusta para duas colunas por linha (aproximadamente 50% cada) */
-        flex: 0 0 calc(50% - 20px); 
-        margin-bottom: 30px;
-        min-width: unset; /* Permite maior adaptação */
-    }
-
-    /* Em 2 colunas, o branding e o newsletter podem ficar melhor alinhados à esquerda/direita */
-    .footer-branding, .footer-newsletter {
-        text-align: left;
-    }
-    
-    .footer-links, .footer-contact {
-        /* Garante que links e contato fiquem bem distribuídos */
-        flex: 0 0 calc(50% - 20px);
-    }
-}
-
-/* Quebra para 1 coluna em telas muito pequenas (mobile) */
-@media (max-width: 576px) {
-    .footer-col {
-        flex: 0 0 100%; /* Uma coluna por linha */
-        text-align: center;
-        margin-bottom: 40px;
-    }
-    
-    /* Centraliza listas e formulários em modo de coluna única */
-    .footer-links ul {
-        max-width: 250px;
-        margin: 0 auto;
-        text-align: left;
-    }
-
-    .newsletter-form {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-    
-    .footer-contact p {
-        text-align: center;
-    }
-    
-    .social-icons {
-        text-align: center;
-    }
-}
-    </style>
     
     
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
