@@ -426,6 +426,83 @@
         background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
     }
 
+    .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: #000;
+            margin-bottom: 50px;
+        }
+
+        .grid-steps {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            gap: 20px;
+        }
+
+        /* Estilização dos Cards */
+        .card {
+            background-color: #f5f5f5; /* Branco levemente acinzentado */
+            border: 1px solid #333;
+            padding: 40px 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 350px;
+            justify-content: flex-start;
+        }
+
+        .card i {
+            font-size: 3rem;
+            color: #000;
+            margin-bottom: 25px;
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            letter-spacing: 1px;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #333;
+            line-height: 1.5;
+            font-weight: 500;
+        }
+
+        /* Detalhe especial do último card (Linha preta) */
+        .card-last {
+            position: relative;
+        }
+
+        .line-decoration {
+            width: 80%;
+            height: 4px;
+            background-color: #000;
+            margin-top: auto; /* Empurra para o final do card */
+            margin-top: 30px;
+        }
+
+        /* Responsividade para tablets e celulares */
+        @media (max-width: 992px) {
+            .grid-steps { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        @media (max-width: 600px) {
+            .grid-steps { grid-template-columns: 1fr; }
+            .title { font-size: 1.8rem; }
+        }
+
     @media (max-width: 768px) {
         .photo-grid {
             grid-template-columns: 1fr;
