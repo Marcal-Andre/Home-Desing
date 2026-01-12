@@ -6,6 +6,60 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="img/img-projetos/sala-de-estar.png" alt="Sala de Estar">
+        </div>
+        <div class="gallery-item">
+            <img src="img/img-projetos/cozinha.png" alt="Cozinha">
+        </div>
+        <div class="gallery-item">
+            <img src="img/img-projetos/quarto.png" alt="Quarto">
+        </div>
+        <div class="gallery-item">
+            <img src="img/img-projetos/banheiro.png" alt="Banheiro">
+        </div>
+        <div class="gallery-item">
+            <img src="img/img-projetos/corredor.png" alt="Corredor">
+        </div>
+        <div class="gallery-item">
+            <img src="img/img-projetos/varanda.png" alt="Varanda">
+        </div>
+    </div>
+
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item img:active {
+            transform: scale(1.2);
+        }
+    </style>
 </body>
 </html>
